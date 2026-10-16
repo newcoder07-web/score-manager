@@ -1,0 +1,81 @@
+:root{
+    --first-color  : #ffcbcb; 
+
+	
+   --second-color : #ffb5b5; 
+   
+    --third-color: #407088;
+    --fourth-color: #132743;
+}
+
+
+
+
+
+
+body{
+    background-color: var(--first-color);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+}
+header{
+    margin-top: 40px;
+}
+h1{
+    color: var(--first-color);
+    background-color: var(--fourth-color);
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgb(19, 39, 67 , 0.3);
+    
+}
+form{
+   background-color: var(--fourth-color);
+   width: 400px;
+   
+   padding: 30px;
+
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(19, 39, 67, 0.3);
+}
+
+fieldset{
+    border: 2px solid var();
+      border: 2px solid var(--second-color);
+    border-radius: 18px;
+    padding: 20px;
+}
+label {
+    color: white;
+}
+input{
+        margin: 8px 0 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+
+}
+button{
+    padding: 14px 35px;
+    margin: 10px 10px 10px;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.6s ease;
+    box-shadow:  0 5px 10px rgba(19, 39, 67, 0.25);;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(19, 39, 67, 0.35);
+}
+button[type="submit"] {
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+}
+button[type="reset"] {
+    background-color: var(--third-color);
+    color: white;
+}

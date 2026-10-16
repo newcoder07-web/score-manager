@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student score manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <h1 > Student score manager</h1>
+</header> 
+
+ 
+     <form id="scoreForm">
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+
+        <br><br>
+
+        <label for="numberOfScores">Number of Scores:</label>
+        <input type="number" id="numberOfScores" min="1" max="20" required>
+
+        <br><br>
+
+        <button type="button" id="generateButton">
+            Generate Score Fields
+        </button>
+
+        <div id="scoreFields"></div>
+
+        <br>
+
+        <button type="submit">Calculate Results</button>
+
+    </form>
+
+    <div id="results"></div>
+
+
+        
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
